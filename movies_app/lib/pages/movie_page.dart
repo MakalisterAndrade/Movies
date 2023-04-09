@@ -16,7 +16,7 @@ class MoviePage extends StatefulWidget {
 class MoviePageState extends State<MoviePage> {
   final _controller = MovieController();
   final _scrollController = ScrollController();
-  int lastPage = 1;
+  int lastPage = 3;
 
   @override
   void initState() {
@@ -81,10 +81,10 @@ class MoviePageState extends State<MoviePage> {
 
     return GridView.builder(
       controller: _scrollController,
-      padding: const EdgeInsets.all(2.0),
+      padding: const EdgeInsets.all(4.0),
       itemCount: _controller.moviesCount,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+        crossAxisCount: 3,
         mainAxisSpacing: 2,
         crossAxisSpacing: 2,
         childAspectRatio: 0.65,

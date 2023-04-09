@@ -1,2 +1,2 @@
-const kAppName = 'UMovies';
+const kAppName = 'MakaMovies';
 const kDateFormat = 'dd/MM/yyyy';
