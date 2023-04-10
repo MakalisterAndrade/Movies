@@ -15,7 +15,7 @@ class MovieController {
   List<MovieModel> get movies => movieResponseModel?.movies ?? <MovieModel>[];
   int get moviesCount => movies.length;
   bool get hasMovies => moviesCount != 0;
-  int get totalPages => movieResponseModel?.totalPages ?? 1;
+  int get totalPages => movieResponseModel?.totalPages ?? 2;
   int get currentPage => movieResponseModel?.page ?? 1;
 
   Future<Either<MovieError, MovieResponseModel>> fetchAllMovies(

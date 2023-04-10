@@ -20,7 +20,7 @@ class MovieModel {
   final String backdropPath;
   final String originalLanguage;
   final String originalTitle;
-  final List<int> genreIds;
+  final List<int> genres;
   final String title;
   final double voteAverage;
   final String overview;
@@ -36,7 +36,7 @@ class MovieModel {
     required this.backdropPath,
     required this.originalLanguage,
     required this.originalTitle,
-    required this.genreIds,
+    required this.genres,
     required this.title,
     required this.voteAverage,
     required this.overview,
@@ -56,7 +56,7 @@ class MovieModel {
         backdropPath: json["backdrop_path"],
         originalLanguage: json["original_language"],
         originalTitle: json["original_title"],
-        genreIds: List<int>.from(json["genre_ids"].map((x) => x)),
+        genres: List<int>.from(json["genre_ids"].map((x) => x)),
         title: json["title"],
         voteAverage: json["vote_average"].toDouble(),
         overview: json["overview"],

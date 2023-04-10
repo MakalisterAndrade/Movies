@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moviesapp/widgets/vote_count.dart';
 
 import '../controllers/movie_detail_controller.dart';
 import '../widgets/centered_message.dart';
@@ -88,6 +89,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
         children: [
           Rate(_controller.movieDetail!.voteAverage),
           ChipDate(date: _controller.movieDetail!.releaseDate),
+          Vote(_controller.movieDetail!.voteCount),
         ],
       ),
     );
